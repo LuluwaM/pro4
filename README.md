@@ -22,16 +22,3 @@ This project demonstrates an image classification model built to distinguish bet
 3. **Lambdas & Step Function Workflow** – Build supporting services and orchestrate them with Step Functions.  
 4. **Testing & Evaluation** – Validate model performance with test images and metrics.  
 
-📈 **Visualization Example**  
-```python
-import matplotlib.pyplot as plt
-
-plt.scatter(x, y, c=['r' if k<.94 else 'b' for k in y])
-plt.axhline(y=0.94, color='g', linestyle='--')
-plt.ylim(0, 1)  # Set y-axis from 0 to 1
-plt.ylabel("Confidence")
-plt.suptitle("Observed Recent Inferences", size=14)
-plt.title("Pictured with confidence threshold for production use", size=10)
-plt.style.use("Solarize_Light2")
-plt.gcf().autofmt_xdate()
-plt.show()
